@@ -19,3 +19,14 @@ table {
 .main {
   background-color: #00fa9a;
 }
+.news_items {
+  padding: 25px;
+  border-bottom: 2px solid;
+}
+.new_list_header {
+  border-left: 10px solid red;
+  border-radius: 5px;
+  background-color: greenyellow;
+  padding: 10px;
+  font-weight: bold;
+}

@@ -26,17 +26,17 @@ class Header extends Component {
         );
     }
 
-    onChangeName = (event) => {
-        this.setState({
-            name    :   event.target.value
-        });
-    }
+    // onChangeName = (event) => {
+    //     this.setState({
+    //         name    :   event.target.value
+    //     });
+    // }
 
-    onChangeEmail = (event) => {
-        this.setState({
-            email    :   event.target.value
-        });
-    }
+    // onChangeEmail = (event) => {
+    //     this.setState({
+    //         email    :   event.target.value
+    //     });
+    // }
     render() {
        console.log(this.state);
         return(
@@ -49,24 +49,7 @@ class Header extends Component {
                     </colgroup>
                     <tbody>
                         <tr>
-                            <td><b>Name</b></td>
-                            <td><input type="text" onChange={this.onChangeName}/></td>
-                        </tr>
-                        <tr>
-                            <td><b>Email</b></td>
-                            <td><input type="text" onChange={this.onChangeEmail}/></td>
-                        </tr>
-                        <tr>
                             <td><button onClick={this.onClickDisplay}>ADD</button></td>
-                        </tr>
-                        <tr>
-                            <td className="result">{this.state.count}. </td>
-                        </tr>
-                        <tr>
-                            <td className="result">{this.state.name}</td>
-                        </tr>
-                        <tr>
-                            <td className="result">{this.state.email}</td>
                         </tr>
                     </tbody>
                 </table>
