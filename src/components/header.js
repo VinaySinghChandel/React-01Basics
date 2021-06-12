@@ -13,7 +13,7 @@ import React from 'react';
 const Header = (props) => {
     return(
         <div className="main">
-            <p className="header">Case Sensitive Filter</p>
+            <p className="header">Filter World</p>
             <table>
                 <colgroup>
                     <col width="50%"/>
