@@ -20,7 +20,7 @@ class App extends Component{
         //console.log(event.target.value);
         let keywords = event.target.value;
         let filtered = this.state.news.filter((item) => {
-            return item.title.indexOf(keywords) > -1;
+            return item.title.indexOf(keywords) > -1 || item.feed.indexOf(keywords) > -1;
         });
 
         this.setState({
